@@ -50,6 +50,7 @@ def scan_url():
     probability = model.predict_proba(features)[0][1] # Confidence score (0 to 1)
 
     print(f"Scanning: {url} | Score: {probability:.2f}")
+    print("just trying")
 
     if prediction == 1:
         return jsonify({
